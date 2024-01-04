@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung luas segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h3 id="logo">Welcome To Kalkulator</h3>
+        <nav id="navigation-bar">
+        <h5 id="keterangan">Sebuah Web sederhana untuk menghitung luas segitiga & keliling segitiga</h5>
+    </header>
+    <section>
+        </nav>
+        <div id="button-menu">
+        <button type="button" id="button1"><a href="#section-luas">Luas Segitiga</a></button>
+        <button type="button" id="button2"><a href="#section-keliling">Keliling Segitiga</a></button>
+        </div>
+    </section>
+    <section id="section-luas">
+        <header id="header-section1">
+            <h2>Luas Segitiga</h2>
+        </header>
+        <div id="contoh-soal">
+            <img id="soal" src="ASSET/segitiga.png" alt="soal">
+            <h4>Rumus Luas Segitiga yaitu:</h4>
+            <h5 id="h5">L = 1/2 x a x t</h5>
+            <h5>
+                Dimana:
+                <br>
+                L = Luas
+                <br>
+                a = Panjang Alas
+                <br>
+                t = Tinggi
+            </h5>
+        </div>
+        <div>
+            <form id="menghitung-luas">
+                <h2>Menghitung Luas</h2>
+                <input id="a" type="number" placeholder="Nilai Alas">
+                <input id="c" type="number" placeholder="Nilai Tinggi">
+                <header class="b">
+                    <button type="button" id="button" onclick="l(), k()">Hitung</button>
+                    <button type="button" id="button-lol" onclick="reset()">Reset</button>
+                    <div class="luas"><span id="l"></span></div>
+                </header>
+            </form>
+        </div>
+    </section>
+    <section id="section-keliling">
+        <header id="header-section1">
+            <h2>Keliling Segitiga</h2>
+        </header>
+        <div id="contoh-soal">
+            <img id="soal" src="ASSET/segitiga.png" alt="soal">
+            <h4>Rumus Keliling Segitiga yaitu:</h4>
+            <h5 id="h5">K = S1 + S2 + S3</h5>
+            <h5>
+                Dimana:
+                <br>
+                K = Keliling
+                <br>
+                S1 = Sisi A
+                <br>
+                S2 = Sisi B
+                <br>
+                S3 = Sisi C
+                <br>
+            </h5>
+        </div>
+        <div>
+            <form id="menghitung-luas">
+                <h2>Menghitung Keliling</h2>
+                <input class="Sisi-input" id="Sisi1" type="number" placeholder="Sisi A">
+                <input class="Sisi-input" id="Sisi2" type="number" placeholder="Sisi B">
+                <input class="Sisi-input" id="Sisi3" type="number" placeholder="Sisi C">
+                <header class="b">
+                    <button id="button" onclick="l(), k()">Hitung</button>
+                    <button id="button-lol" onclick="reset()">Reset</button>
+                    <div class="luas"><span id="k"></span></div>
+                </header>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
